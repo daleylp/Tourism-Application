@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>New Zealand Tourist Information</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta name="keywords" content="tourism, tourist, city, town, info, places, location">
+        <meta name="author" content="Liam Daley">
+        <meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="javascript.js"></script>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=<INSERT KEY HERE>"
+        async defer></script>
+    </head>
+    <body onload="initMap()">
+        <header>
+            <p>New Zealand Tourist Information Guide</p>
+        </header>
+        <div id="cities">
+            <h3>Recently Viewed</h3>
+            <ul id="recent"></ul>
+        </div>
+        <div id="cityInput">
+            <h3>Search</h3>
+            <label>Enter the name of a town or city for more information: </label>
+            <input id="address" type="text" placeholder="Town/city..." autofocus>
+            <input id="submitAddress" type="button" value="Go" onclick="initCity()">
+        </div>
+        <div id="times"></div>
+        <div id="map"></div>
+        <div id="placeInput">
+            <label for="">Search here to find places of interest: </label>
+            <input id="place" type="text" placeholder="Places...">
+            <input id="submitPlace" type="button" onclick="initPlaces()" value="Go">
+        </div>
+        <div id="placesDiv"><ul id="places"></ul></div>
+        <div id="groupInput">
+            <label for="">Click here to find groups of interest: </label>
+            <input id="submitGroup" type="button" onclick="getGroups()" value="Go">
+        </div>
+        <div id="groupsDiv"></div>
+    </body>
+</html>

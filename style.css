@@ -1,0 +1,105 @@
+
+/* STRUCTURE---------------------------------------------------------------------------- */
+
+html, body {
+    height: 100%;
+    margin: auto 0;
+    padding: 0;
+}
+
+html{
+    background-color: #ffffff;
+}
+
+body{
+    font-family: "Helvetica", Arial, sans-serif;
+    margin: auto;
+    font-size: 150%;
+    background-image: linear-gradient(#626360, #ffffff);
+}
+
+#map {
+    height: 70%;
+    width: 50%;
+    margin: 1% 5%;
+    display: none;
+}
+
+ul{
+    padding: 0;
+}
+
+#cities{
+    display: inline-block;
+    float: right;
+    width: 15%;
+    font-size: 80%;
+    text-align: center;
+    padding-right: 5%;
+    display: none;
+}
+
+header{
+    display: inline-block;
+    width: 100%;
+    background-color: #626360;
+    color: #fbfbfb;
+    font-size: 110%;
+}
+
+header p{
+    padding-left: 10%
+}
+
+li{
+    list-style: none;
+}
+
+input[type=text]{
+    width: 20%;
+}
+
+#placeInput, #cityInput, #placesDiv, #times, #groupInput, #groupDiv{
+    padding: 1% 5%;
+    font-size: 80%;
+}
+
+#cityInput{
+    padding-top: 0;
+}
+
+#placeInput, #groupInput{
+    display: none;
+}
+
+a {
+    padding-left: 5%
+}
+
+/* END STRUCTURE----------------------------------------------------------------------------- */
+
+/* INPUT------------------------------------------------------------------------------------- */
+
+input[type=text]{
+    border: 1px solid #000000;
+}
+
+input[type=button]{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+input[type=button]:hover{
+    background-color: #626360;
+    color: #ffffff;
+}
+
+li:hover {
+    color: #ffffff;
+}
+
+li{
+    cursor: pointer;
+}
+
+/* END INPUT--------------------------------------------------------------------------------- */
